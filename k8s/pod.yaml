@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: c1
+    image: nginx
+    ports:
+    - containerPort: 80
+
+# kubectl run nginx-pod --image nginx --port=80
